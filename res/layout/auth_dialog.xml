@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#FFFFFF">
+    <ImageView
+            android:src="@drawable/login"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:scaleType="fitXY"
+            android:background="#FFFFFF"
+            android:id="@+id/headerLoginPic"
+            android:contentDescription="@string/app_name" />
+    <EditText
+            android:id="@+id/passwordAuth"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif"
+            android:hint="@string/password"/>
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:id="@+id/cancelForm"
+                android:textColor="#FFFFFF"
+                android:background="#AA66CC"
+                android:fontFamily="sans-serif"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/submitForm"
+                android:layout_toRightOf="@+id/cancelForm"
+                android:textColor="#FFFFFF"
+                android:background="#AA66CC"
+                android:paddingLeft="5dp"
+                android:fontFamily="sans-serif"
+                />
+
+    </RelativeLayout>
+</LinearLayout>

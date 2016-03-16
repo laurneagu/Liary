@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- The main content view -->
+    <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/headerMenu"
+                android:background="#AA66CC">
+
+            <ImageButton android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical = "true"
+                         android:paddingLeft="20dp"
+                         android:layout_marginLeft="20dp"
+                         android:id="@+id/showPanelHelp"
+                    />
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Liary"
+                    android:id="@+id/textView"
+                    android:background="#AA66CC"
+                    android:textColor="#FFFFFF"
+                    android:layout_toRightOf="@+id/showPanelHelp"
+                    android:gravity="center|left"
+                    />
+
+        </RelativeLayout>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scroll_view"
+                    >
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/content_rl"
+                >
+            <TextView
+                    android:id="@+id/help_mess_tv"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:background="#AA66CC"
+                    android:paddingLeft="15dp"
+                    android:textSize="35dp"
+                    android:paddingTop="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Help"
+                    />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/liary_general_tv"
+                      android:background="#AA66CC"
+                      android:textColor="#FFFFFF"
+                      android:paddingLeft="15dp"
+                      android:paddingRight="15dp"
+                      android:gravity="center"
+                      android:layout_below="@+id/help_mess_tv"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/liary_general_tv"
+                      android:background="#AA66CC"
+                      android:textColor="#FFFFFF"
+                      android:gravity="center"
+                      android:id="@+id/how_to_use_tv"
+                    />
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/how_to_use_iv"
+                       android:scaleType="fitCenter"
+                       android:layout_below="@+id/liary_general_tv"
+                       android:layout_toRightOf="@+id/how_to_use_tv"
+                       android:src="@drawable/to_read"
+                       android:background="#AA66CC"
+                    />
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/main_page_det_ic"
+                       android:scaleType="fitCenter"
+                       android:background="#AA66CC"
+                       android:layout_below="@+id/how_to_use_tv"
+                       android:src="@drawable/to_use"
+                    />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/how_to_use_iv"
+                      android:layout_toRightOf="@+id/main_page_det_ic"
+                      android:background="#AA66CC"
+                      android:textColor="#FFFFFF"
+                      android:gravity="center"
+                      android:id="@+id/main_page_det_tv"
+                    />
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+    <!-- The navigation drawer -->
+    <include layout="@layout/left_side_panel"/>
+
+</android.support.v4.widget.DrawerLayout>

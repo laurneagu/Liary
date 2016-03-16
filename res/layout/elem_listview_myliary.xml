@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Definig a container for you List Item-->
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingTop="2sp"
+        android:id="@+id/curr_lie_layout">
+    <!-- Defining where should text be placed. You set you text color here-->
+
+    <Button
+            android:id="@+id/roundButtonCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            />
+
+    <TextView
+            android:id="@+id/list_content"
+            android:textColor="#FFFFFF"
+            android:gravity="left"
+            android:paddingLeft="15dp"
+            android:textSize="15dp"
+            android:paddingTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/roundButtonCategory"
+              />
+
+    <TextView
+            android:id="@+id/list_content2"
+            android:textColor="#FFFFFF"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_content"
+        />
+    <ImageButton android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/discardLie"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerInParent="true"
+                 android:background="@drawable/ic_action_discard"
+                />
+
+</RelativeLayout>

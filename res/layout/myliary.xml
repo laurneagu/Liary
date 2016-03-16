@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- The main content view -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/headerMenu"
+                android:background="#AA66CC">
+
+            <ImageButton android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical = "true"
+                         android:paddingLeft="20dp"
+                         android:layout_marginLeft="20dp"
+                         android:id="@+id/showPanel"
+                    />
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Liary"
+                    android:id="@+id/textView"
+                    android:background="#AA66CC"
+                    android:textColor="#FFFFFF"
+                    android:layout_toRightOf="@+id/showPanel"
+                    android:gravity="center|left"
+                    />
+
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                >
+        <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/listOfLies"
+                android:background="#AA66CC"
+                />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <include layout="@layout/left_side_panel"/>
+
+</android.support.v4.widget.DrawerLayout>

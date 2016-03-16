@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Liary</string>
+
+    <string name="dialog_message">Something</string>
+    <string name="dialog_title">Title</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <string name="liary_motto"> <b>Liary</b> - the app that keeps track of the lies you said so that you won\'t mix the info further said</string>
+    <string name="how_to_use">
+        \t\t How to use : \n\n
+        \t- Create a password to secure your liary so no one knows the lies you said. \n
+        \t- Lies are stored on a local database that can be deleted any time. \n
+        \t- To record a lie you must also select the person you lied to and the gravity of the lie, from green to red, where green means the lie was an easy one and red means that the lie was really bad and it should not be discovered under any circumstances.
+    </string>
+
+    <string name="main_page_det">
+        My liary - collection of lies stored on a local database \n\n
+        Tell me a lie - record the lie you said, the person you lied to and the gravity of the lie \n\n
+        Black lie list - keeps track of the number of times you lied to one person \n\n
+        Erase all diary - permanently deletes all the lies you told \n
+    </string>
+
+    <string name="my_liary_exp">Collection of lies stored on a local database</string>
+    <string name="tell_me_exp">Records the lie you said, the person you lied to and the gravity of the lie</string>
+    <string name="black_lie_list_exp">Keeps track of the number of times you lied to one person</string>
+    <string name="erase_diary_exp">Permanently deletes all the lies you told</string>
+
+    <string-array name="panel_array">
+        <item>Home</item>
+        <item>Settings</item>
+        <item>Help</item>
+        <item>Credits</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+</resources>
